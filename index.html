@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MeetUp</title>
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> 
+	<script type="text/javascript" src="js/timer.js"></script>
+</head>
+<body>
+	<div>
+		<div class="main-header">
+			<div class="container clearfix">
+				<nav class="main-header__navbar navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="img/bangladesh.png" alt=""></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right" id="list" >
+								<li><a href="#EventDetails">Event details</a></li>
+								<li><a href="#Spakers">Speakers</a></li>
+								<li><a href="#Sponsors">Sponsors</a></li>
+								<li><a href="#PastEvents">Past events</a></li>
+								<li><a href="#Contact">Contact</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+				<ul class="main-header__countdown">
+					<div class="numbers-wrapper">
+						<li> <span class="days">00</span>
+							<p class="days_ref">days</p>
+						</li>
+					</div>
+					<li class="seperator">:</li>
+					<div class="numbers-wrapper">
+						<li> <span class="hours">00</span>
+							<p class="hours_ref">hours</p>
+						</li>
+					</div>
+					<li class="seperator">:</li>
+					<div class="numbers-wrapper">
+						<li> <span class="minutes">00</span>
+							<p class="minutes_ref">minutes</p>
+						</li>
+					</div>
+					<li class="seperator">:</li>
+					<div class="numbers-wrapper">
+						<li> <span class="seconds">00</span>
+							<p class="seconds_ref">seconds</p>
+						</li>
+					</div>
+				</ul>
+				<div class="main-header__countdown--days">
+					<span>After <span class="days">00</span> days!</span>
+				</div>
+			</div>
+			<svg version="1.1" class="triangle" width="2000px" height="150px" viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polygon fill="#fff" points="0,100 100,0 100,100"/>
+			</svg>
+		</div>
+
+		<div class="greeting">
+			<div class="container">
+				<div class="greeting__welcome col-md-6 col-lg-7">
+					<h1>Welcome!</h1>
+					<p>The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too... <br><br>Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited! <br><br>It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;) <br>Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</p>
+				</div>
+				<form class="greeting__form col-md-6 col-lg-5" action="#">
+					<h2>Sign up for event</h2>
+					<div class="input-group">
+						<input type="text" class="form-control" name="name" value="" placeholder="Your name">
+						<input type="text" class="form-control" name="email" value="" placeholder="Enter your email">
+						<input type="tel" class="form-control" name="phone" value="" placeholder="Phone number">
+						<input type="text" class="form-control" name="nickname" value="" placeholder="Envato Username">
+					</div>
+					<button class="btn" type="submit">Let me in!</button>
+					<span>Hurry up, Limited seats availble <br>*we will never spam your email</span>
+				</form>
+			</div>
+		</div>
+
+		<div class="interestingness">
+			<div class="container">
+				<div class="interestingness__element col-sm-4">
+					<img src="img/Community.png" alt="Community">
+					<h2>Community</h2>
+					<p>Meet the Community you’ve always talked with, in real life! This meetup 		will be all about authors engaging each other with interesting coversationand topics. We will have loads of fun.</p>
+				</div>
+				<div class="interestingness__element col-sm-4">
+					<img src="img/Talt Shop.png" alt="Talk Shop">
+					<h2>Talk Shop</h2>
+					<p>In this meetup you will get to know the marketplaces better, because that’s why were all here for right? Learn a few tips and tricks from experienced authors from all over the country.</p>
+				</div>
+				<div class="interestingness__element col-sm-4">
+					<img src="img/War Stories.png" alt="War Stories">
+					<h2>War Stories</h2>
+					<p>Gather round fellow authors! <br>Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="timetable">
+			<div class="container">
+				<table class="table table-striped">
+					<tr id="table-header">
+						<th>Time</th>
+						<th>Stuff that will happen</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td>10am-12pm</td>
+						<td>Introduction and presentations about Envato</td>
+						<td><a href="#"><img src="img/icon plus.png" alt=""></a></td>
+					</tr>
+					<tr>
+						<td>12am-02pm</td>
+						<td>Sessions by honorable guests and Speakers</td>
+						<td><a href="#"><img src="img/icon plus.png" alt=""></a></td>
+					</tr>
+					<tr>
+						<td>02am-03pm</td>
+						<td>Break and Mingle time with the authors</td>
+						<td><a href="#"><img src="img/icon plus.png" alt=""></a></td>
+					</tr>
+					<tr>
+						<td>03am-05pm</td>
+						<td>Portfolio Review, Rewards and Ending Presentation</td>
+						<td><a href="#"><img src="img/icon plus.png" alt=""></a></td>
+					</tr>
+				</table>
+				<div class="col-md-2"></div>
+				<p class="col-md-8">Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)</p>
+			</div>
+			<svg version="1.1" class="triangle" width="2000px" height="150px" viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polygon fill="#4a454b" points="0,100 100,0 100,100"/>
+			</svg>
+		</div>
+		
+		<div class="elite">
+			<div class="container">
+				<div class="elite__logo col-md-5">
+					<img src="img/Elite Badge.png" alt="Envato Elite"></div>
+					<div class="elite__text col-md-7 col-lg-6">
+						<h2>We reward the Elites!</h2>
+						<p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community. <br><br>All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members. <br><br>*Be advised, we will only give you Elite thank you swag for each level of elite you cross. <br>That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>
+						<button class="btn">Bring on the swag!</button>
+					</div>
+				</div>
+			</div>
+			<svg version="1.1" class="triangle" width="2000px" height="150px" viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polygon fill="#fff" points="0,100 100,0 100,100"/>
+			</svg>
+		</div>
+
+		<div class="speakers">
+			<div class="container">
+				<div class="col-md-6 col-lg-offset-1">
+					<h2>Speakers</h2>
+					<p>Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product author, working at envato and marketing your business. <br>Hope you will have a great time listening to our presentations!</p>
+				</div>
+				<div class="col-md-12 col-lg-10 col-lg-offset-1">
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details">
+							<h2>Shahriyer Shuvo</h2>
+							<span>More about selling in the Envato Marketplaces</span><br>
+							<a href="#" class="social-btn social-btn-fb"></a>
+							<a href="#" class="social-btn social-btn-tw"></a>
+							<a href="#" class="social-btn social-btn-bh"></a>
+							<a href="#" class="social-btn social-btn-dr"></a>
+						</div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details speaker__fingers"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+
+				</div>
+			</div>
+			<svg version="1.1" class="triangle" width="2000px" height="150px" viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polygon fill="#4a454b" points="0,100 100,0 100,100"/>
+			</svg>
+		</div>
+
+		<div class="sponsors">
+			<div class="container">
+				<h2>Sponsor Our Event!</h2>
+				<p>If you want to help us making this event lively and successful, help us by sponsoring our event! <br>This will help us bring in more people, have better livestreaming equipment, maybe even our own chef! <br>You can also sponsor us by giving away free swag at the event! <br><br>Here’s who have sponsored us already:</p>
+				<div class="sponsors__list">
+					<a class="" href="#"><img src="img/mountains.png" alt=""></a>
+					<a class="" href="#"><img src="img/labyrinth.png" alt=""></a>
+					<a class="" href="#"><img src="img/envato.png" alt=""></a>
+				</div>
+				<button class="btn">Sponsor Us</button>
+			</div>
+			<svg version="1.1" class="triangle" width="2000px" height="150px" viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polygon fill="#fff" points="0,100 100,0 100,100"/>
+			</svg>
+		</div>
+
+		<div class="past-events">
+			<div class="container">
+				<div class="past-events__text col-sm-6 col-md-offset-1">
+					<h2>Past Events</h2>
+					<p>Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)</p>
+				</div>
+				<div class="past-events__list col-sm-12 col-md-10 col-md-offset-1">
+					<a class="col-sm-5" href="#"><div class="event event1">Event 1</div></a>
+					<a class="col-sm-7" href="#"><div class="event event2">Event 2</div></a>
+					<a class="col-sm-7" href="#"><div class="event event3">Event 3</div></a>
+					<a class="col-sm-5" href="#"><div class="event event4">Event 4</div></a>
+				</div>
+				<button class="btn col-sm-2 col-sm-offset-5">View More</button>	
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="container">
+				<div class="contact__feedback col-sm-10 col-sm-offset-1">
+					<div class="contact__address col-sm-6">
+						<img src="img/label.png" alt="Label"><br>
+						<span>Lorem Ipsum Avenue, 420/2 elm <br>street, Melbourne, Sydney - 2122, <br>Kingdom of Australia</span><br>
+						<button class="btn btn-success">View Map</button>
+					</div>
+					<div class="col-sm-6">
+						<form action="#" class="contact__form">
+							<input type="text" class="form-control" placeholder="ingeniousartist@gmail.com|"></form>
+							<textarea class="form-control" rows="10" placeholder="Type youe message"></textarea>
+							<button class="btn btn-primary">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-footer">
+			<div class="contsainer">
+				<div class="main-footer__social">
+					<a href="#" class="social-btn social-btn-fb"></a>
+					<a href="#" class="social-btn social-btn-tw"></a>
+					<a href="#" class="social-btn social-btn-in"></a>
+					<a href="#" class="social-btn social-btn-gp"></a>
+					<a href="#" class="social-btn social-btn-tu"></a>
+				</div>
+				<div class="main-footer__created">
+					<span>Hope we see you at the event! <br>All Rights Reserved. Envato Bangladesh © 2016</span>
+				</div>
+				<div class="main-footer__upper"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
