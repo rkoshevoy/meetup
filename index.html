@@ -8,62 +8,64 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> 
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
 	<script type="text/javascript" src="js/timer.js"></script>
 </head>
 <body>
 
-	<div class="main-header">
-	<a class="anchor" id="EventDetails"></a>
-		<div class="container clearfix">
-			<nav class="main-header__navbar navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#"><img src="img/bangladesh.png" alt=""></a>
-					</div>
+	<section class="anchor" id="EventDetails">
+		<div class="main-header">
+			<div class="container clearfix">
+				<nav class="main-header__navbar navbar navbar-default navbar-fixed-top">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="img/bangladesh.png" alt=""></a>
+						</div>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-right" id="list" >
-							<li><a href="#EventDetails">Event details</a></li>
-							<li><a href="#Speakers">Speakers</a></li>
-							<li><a href="#Sponsors">Sponsors</a></li>
-							<li><a href="#PastEvents">Past events</a></li>
-							<li><a href="#Contact">Contact</a></li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-			<ul class="main-header__countdown">
-				<li><div class="numbers-wrapper"><span class="days">00</span></div>
-					<p class="days_ref">days</p>
-				</li>
-				<li class="seperator">:</li>
-				<li><div class="numbers-wrapper"><span class="hours">00</span></div>
-					<p class="hours_ref">hours</p>
-				</li>
-				<li class="seperator">:</li>
-				<li><div class="numbers-wrapper"><span class="minutes">00</span></div>
-					<p class="minutes_ref">minutes</p>
-				</li>
-				<li class="seperator">:</li>
-				<li><div class="numbers-wrapper"><span class="seconds">00</span></div>
-					<p class="seconds_ref">seconds</p>
-				</li>
-			</ul>
-			<div class="main-header__countdown--days">
-				<span>After <span class="days">00</span> days!</span>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right" id="list" >
+								<li><a href="#EventDetails">Event details</a></li>
+								<li><a href="#Speakers">Speakers</a></li>
+								<li><a href="#Sponsors">Sponsors</a></li>
+								<li><a href="#PastEvents">Past events</a></li>
+								<li><a href="#Contact">Contact</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+				<ul class="main-header__countdown">
+					<li><div class="numbers-wrapper"><span class="days">00</span></div>
+						<p class="days_ref">days</p>
+					</li>
+					<li class="seperator">:</li>
+					<li><div class="numbers-wrapper"><span class="hours">00</span></div>
+						<p class="hours_ref">hours</p>
+					</li>
+					<li class="seperator">:</li>
+					<li><div class="numbers-wrapper"><span class="minutes">00</span></div>
+						<p class="minutes_ref">minutes</p>
+					</li>
+					<li class="seperator">:</li>
+					<li><div class="numbers-wrapper"><span class="seconds">00</span></div>
+						<p class="seconds_ref">seconds</p>
+					</li>
+				</ul>
+				<div class="main-header__countdown--days">
+					<span>After <span class="days">00</span> days!</span>
+				</div>
 			</div>
+			<svg version="1.1" class="triangle" viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polygon fill="#fff" points="0,100 100,0 100,100"></polygon>
+			</svg>
 		</div>
-		<svg version="1.1" class="triangle" viewBox="0 0 100 100" preserveAspectRatio="none" >
-			<polygon fill="#fff" points="0,100 100,0 100,100"></polygon>
-		</svg>
-	</div>
+	</section>
 
 	<div class="greeting">
 		<div class="container">
@@ -158,110 +160,113 @@
 		</svg>
 	</div>
 
-	<div class="speakers">
-	<a class="anchor" id="Speakers"></a>
-		<div class="container">
-			<div class="col-md-6 col-lg-offset-1">
-				<h2>Speakers</h2>
-				<p>Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product author, working at envato and marketing your business. <br>Hope you will have a great time listening to our presentations!</p>
-			</div>
-			<div class="col-md-12 col-lg-10 col-lg-offset-1">
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details"></div>
+
+	<section class="anchor" id="Speakers">
+		<div class="speakers">
+			<div class="container">
+				<div class="col-md-6 col-lg-offset-1">
+					<h2>Speakers</h2>
+					<p>Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product author, working at envato and marketing your business. <br>Hope you will have a great time listening to our presentations!</p>
 				</div>
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details">
-						<h2>Shahriyer Shuvo</h2>
-						<span>More about selling in the Envato Marketplaces</span><br>
-						<a href="#" class="social-btn social-btn-fb"></a>
-						<a href="#" class="social-btn social-btn-tw"></a>
-						<a href="#" class="social-btn social-btn-bh"></a>
-						<a href="#" class="social-btn social-btn-dr"></a>
+				<div class="col-md-12 col-lg-10 col-lg-offset-1">
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details">
+							<h2>Shahriyer Shuvo</h2>
+							<span>More about selling in the Envato Marketplaces</span><br>
+							<a href="#" class="social-btn social-btn-fb"></a>
+							<a href="#" class="social-btn social-btn-tw"></a>
+							<a href="#" class="social-btn social-btn-bh"></a>
+							<a href="#" class="social-btn social-btn-dr"></a>
+						</div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details speaker__fingers"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
+					</div>
+					<div class="speakers__speaker col-md-4">
+						<div class="speaker__details"></div>
 					</div>
 				</div>
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details"></div>
-				</div>
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details"></div>
-				</div>
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details speaker__fingers"></div>
-				</div>
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details"></div>
-				</div>
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details"></div>
-				</div>
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details"></div>
-				</div>
-				<div class="speakers__speaker col-md-4">
-					<div class="speaker__details"></div>
-				</div>
-
 			</div>
+			<svg version="1.1" class="triangle" viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polygon fill="#4a454b" points="0,100 100,0 100,100"/>
+			</svg>
 		</div>
-		<svg version="1.1" class="triangle" viewBox="0 0 100 100" preserveAspectRatio="none" >
-			<polygon fill="#4a454b" points="0,100 100,0 100,100"/>
-		</svg>
-	</div>
+	</section>
 
-	<div class="sponsors">
-	<a class="anchor" id="Sponsors"></a>
-		<div class="container">
-			<h2>Sponsor Our Event!</h2>
-			<p>If you want to help us making this event lively and successful, help us by sponsoring our event! <br>This will help us bring in more people, have better livestreaming equipment, maybe even our own chef! <br>You can also sponsor us by giving away free swag at the event! <br><br>Here’s who have sponsored us already:</p>
-			<div class="sponsors__list">
-				<a class="" href="#"><img src="img/mountains.png" alt=""></a>
-				<a class="" href="#"><img src="img/labyrinth.png" alt=""></a>
-				<a class="" href="#"><img src="img/envato.png" alt=""></a>
-			</div>
-			<button class="btn">Sponsor Us</button>
-		</div>
-		<svg version="1.1" class="triangle" viewBox="0 0 100 100" preserveAspectRatio="none" >
-			<polygon fill="#fff" points="0,100 100,0 100,100"/>
-		</svg>
-	</div>
-
-	<div class="past-events">
-	<a class="anchor" id="PastEvents"></a>
-		<div class="container">
-			<div class="past-events__text col-sm-6 col-md-offset-1">
-				<h2>Past Events</h2>
-				<p>Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)</p>
-			</div>
-			<div class="past-events__list col-sm-12 col-md-10 col-md-offset-1">
-				<a class="col-sm-5" href="#"><div class="event event1">Event 1</div></a>
-				<a class="col-sm-7" href="#"><div class="event event2">Event 2</div></a>
-				<a class="col-sm-7" href="#"><div class="event event3">Event 3</div></a>
-				<a class="col-sm-5" href="#"><div class="event event4">Event 4</div></a>
-				<button class="btn">View More</button>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="contact">
-	<a class="anchor" id="Contact"></a>
-		<div class="container">
-			<div class="contact__feedback col-sm-10 col-sm-offset-1">
-				<div class="contact__address col-sm-6">
-					<img src="img/label.png" alt="Label"><br>
-					<span>Lorem Ipsum Avenue, 420/2 elm <br>street, Melbourne, Sydney - 2122, <br>Kingdom of Australia</span><br>
-					<button class="btn">View Map</button>
+	<section class="anchor" id="Sponsors">
+		<div class="sponsors">
+			<div class="container">
+				<h2>Sponsor Our Event!</h2>
+				<p>If you want to help us making this event lively and successful, help us by sponsoring our event! <br>This will help us bring in more people, have better livestreaming equipment, maybe even our own chef! <br>You can also sponsor us by giving away free swag at the event! <br><br>Here’s who have sponsored us already:</p>
+				<div class="sponsors__list">
+					<a class="" href="#"><img src="img/mountains.png" alt=""></a>
+					<a class="" href="#"><img src="img/labyrinth.png" alt=""></a>
+					<a class="" href="#"><img src="img/envato.png" alt=""></a>
 				</div>
-				<div class="col-sm-6">
-					<form action="#" class="contact__form">
-						<input type="text" class="form-control" placeholder="ingeniousartist@gmail.com|">
-						<textarea class="form-control" rows="10" placeholder="Type youe message"></textarea>
-						<button class="btn">Send Message</button>
-					</form>
+				<button class="btn">Sponsor Us</button>
+			</div>
+			<svg version="1.1" class="triangle" viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polygon fill="#fff" points="0,100 100,0 100,100"/>
+			</svg>
+		</div>
+	</section>
+
+	<section class="anchor" id="PastEvents">
+		<div class="past-events">
+			<div class="container">
+				<div class="past-events__text col-sm-6 col-md-offset-1">
+					<h2>Past Events</h2>
+					<p>Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)</p>
+				</div>
+				<div class="past-events__list col-sm-12 col-md-10 col-md-offset-1">
+					<a class="col-sm-5" href="#"><div class="event event1">Event 1</div></a>
+					<a class="col-sm-7" href="#"><div class="event event2">Event 2</div></a>
+					<a class="col-sm-7" href="#"><div class="event event3">Event 3</div></a>
+					<a class="col-sm-5" href="#"><div class="event event4">Event 4</div></a>
+					<button class="btn">View More</button>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<section class="anchor" id="Contact">
+		<div class="contact">
+			<div class="container">
+				<div class="contact__feedback col-sm-10 col-sm-offset-1">
+					<div class="contact__address col-sm-6">
+						<img src="img/label.png" alt="Label"><br>
+						<span>Lorem Ipsum Avenue, 420/2 elm <br>street, Melbourne, Sydney - 2122, <br>Kingdom of Australia</span><br>
+						<button class="btn">View Map</button>
+					</div>
+					<div class="col-sm-6">
+						<form action="#" class="contact__form">
+							<input type="text" class="form-control" placeholder="ingeniousartist@gmail.com|">
+							<textarea class="form-control" rows="10" placeholder="Type youe message"></textarea>
+							<button class="btn">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<div class="main-footer">
 		<div class="contsainer">
