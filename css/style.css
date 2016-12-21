@@ -53,8 +53,8 @@ body {
 .anchor:before {
   display: block;
   content: "";
-  height: 100px;
-  margin: -100px 0 0;
+  height: 80px;
+  margin: -80px 0 0;
 }
 .triangle {
   width: 100%;
@@ -109,6 +109,9 @@ h2 {
 }
 #list li:hover {
   background-color: #3b3b3b;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: rgba(0,0,0,0.5)
 }
 .greeting {
   position: relative;
