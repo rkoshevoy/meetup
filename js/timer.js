@@ -1,1 +1,92 @@
-$(document).ready(function(){!function(t){t.fn.downCount=function(e,n){function o(){var t=new Date(r.date),e=s(),o=t-e;if(o<0)return clearInterval(i),void(n&&"function"==typeof n&&n());var d=1e3,f=60*d,u=60*f,c=24*u,l=Math.floor(o/c),h=Math.floor(o%c/u),m=Math.floor(o%u/f),g=Math.floor(o%f/d);l=String(l).length>=2?l:"0"+l,h=String(h).length>=2?h:"0"+h,m=String(m).length>=2?m:"0"+m,g=String(g).length>=2?g:"0"+g;var p=1===l?"day":"days",v=1===h?"hour":"hours",y=1===m?"minute":"minutes",w=1===g?"second":"seconds";a.find(".days").text(l),a.find(".hours").text(h),a.find(".minutes").text(m),a.find(".seconds").text(g),a.find(".days_ref").text(p),a.find(".hours_ref").text(v),a.find(".minutes_ref").text(y),a.find(".seconds_ref").text(w)}var r=t.extend({date:null,offset:null},e);r.date||t.error("Date is not defined."),Date.parse(r.date)||t.error("Incorrect date format, it should look like this, 12/24/2012 12:00:00.");var a=this,s=function(){var t=new Date,e=t.getTime()+6e4*t.getTimezoneOffset(),n=new Date(e+36e5*r.offset);return n},i=setInterval(o,1e3)}}(jQuery);var t=t||[];t.push(["_setAccount","UA-36251023-1"]),t.push(["_setDomainName","jqueryscript.net"]),t.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}(),$(".main-header__countdown").downCount({date:"03/28/2017 00:00:00",offset:2}),$(".main-header__countdown--days").downCount({date:"03/28/2017 00:00:00",offset:2})});
+$(document).ready(function() {
+    (function ($) {
+
+        $.fn.downCount = function (options, callback) {
+            var settings = $.extend({
+                date: null,
+                offset: null
+            }, options);
+
+            if (!settings.date) {
+                $.error('Date is not defined.');
+            }
+
+            if (!Date.parse(settings.date)) {
+                $.error('Incorrect date format, it should look like this, 12/24/2012 12:00:00.');
+            }
+
+            var container = this;
+
+            var currentDate = function () {
+                var date = new Date();
+                var utc = date.getTime() + (date.getTimezoneOffset() * 60000);
+                var new_date = new Date(utc + (3600000*settings.offset))
+                return new_date;
+            };
+
+            function countdown () {
+                var target_date = new Date(settings.date),
+                current_date = currentDate(); 
+                var difference = target_date - current_date;
+
+                if (difference < 0) {
+                    clearInterval(interval);
+                    if (callback && typeof callback === 'function') callback();
+                    return;
+                }
+
+                var _second = 1000,
+                _minute = _second * 60,
+                _hour = _minute * 60,
+                _day = _hour * 24;
+
+                var days = Math.floor(difference / _day),
+                hours = Math.floor((difference % _day) / _hour),
+                minutes = Math.floor((difference % _hour) / _minute),
+                seconds = Math.floor((difference % _minute) / _second);
+
+                days = (String(days).length >= 2) ? days : '0' + days;
+                hours = (String(hours).length >= 2) ? hours : '0' + hours;
+                minutes = (String(minutes).length >= 2) ? minutes : '0' + minutes;
+                seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;
+
+                var ref_days = (days === 1) ? 'day' : 'days',
+                ref_hours = (hours === 1) ? 'hour' : 'hours',
+                ref_minutes = (minutes === 1) ? 'minute' : 'minutes',
+                ref_seconds = (seconds === 1) ? 'second' : 'seconds';
+
+                container.find('.days').text(days);
+                container.find('.hours').text(hours);
+                container.find('.minutes').text(minutes);
+                container.find('.seconds').text(seconds);
+
+                container.find('.days_ref').text(ref_days);
+                container.find('.hours_ref').text(ref_hours);
+                container.find('.minutes_ref').text(ref_minutes);
+                container.find('.seconds_ref').text(ref_seconds);
+            };
+            
+            var interval = setInterval(countdown, 1000);
+        };
+    })(jQuery);
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    $('.main-header__countdown').downCount({
+        date: '03/28/2017 00:00:00',
+        offset: +2
+    });
+    $('.main-header__countdown--days').downCount({
+        date: '03/28/2017 00:00:00',
+        offset: +2
+    });
+});
