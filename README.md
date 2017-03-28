@@ -1,3 +1,11 @@
 # meetup
 Landing page
-https://rkoshevoy.github.io/meetup/
+
+Адаптивный лендинг для мероприятия. Просмотреть - https://rkoshevoy.github.io/meetup/
+
+Использовано:
+- БЭМ;
+- Mobile-first;
+- LESS;
+- Bootstrap;
+- GULP;
