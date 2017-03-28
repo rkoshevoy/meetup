@@ -1,7 +1,7 @@
 # meetup
 Landing page
 
-Адаптивный лендинг для мероприятия. Просмотреть - https://rkoshevoy.github.io/meetup/
+Адаптивный лендинг для мероприятия. 1 страница. Просмотреть - https://rkoshevoy.github.io/meetup/
 
 Использовано:
 - БЭМ;
